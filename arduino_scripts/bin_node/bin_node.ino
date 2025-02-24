@@ -4,11 +4,11 @@
 #include <addons/RTDBHelper.h>
 #include <NewPing.h>
 
-#define WIFI_SSID "SSID"
-#define WIFI_PASSWORD "PASSWORD"
-#define API_KEY "API_KEY"
-#define DATABASE_URL "URL"
-#define DATABASE_SECRETS_TOKEN "TOKEN"
+#define WIFI_SSID "Mohammed-5GHz"
+#define WIFI_PASSWORD "0562884668"
+#define API_KEY "AIzaSyBtvj6QkvbdP0BrQKT80D1CssG22YMvQMY"
+#define DATABASE_URL "https://junior-817bf-default-rtdb.asia-southeast1.firebasedatabase.app"
+#define DATABASE_SECRETS_TOKEN "KOyORgwjYfxNwdzMeecBcYBentV5KaE6PZK2T3w1"
 #define TRIGGER_PIN  12
 #define ECHO_PIN     11
 #define MAX_DISTANCE 200
