@@ -6,7 +6,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--town_name', type=str, default="pondicherry_india")
+    parser.add_argument('--town_name', type=str, default="UOS_map")
     
     name = parser.parse_args().town_name
     cred = credentials.Certificate("data/firebase_credentials/smart-garbage-monitoring-key.json")

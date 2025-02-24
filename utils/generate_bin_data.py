@@ -3,7 +3,7 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--town_name', type=str, default="pondicherry_india")
+    parser.add_argument('--town_name', type=str, default="UOS_map")
     
     name = parser.parse_args().town_name
     file = open(f'data/maps/{name}/{name}.json')
