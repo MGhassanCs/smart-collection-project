@@ -4,11 +4,11 @@
 #include <addons/RTDBHelper.h>
 #include <NewPing.h>
 
-#define WIFI_SSID "SSID"
-#define WIFI_PASSWORD "PASSWORD"
-#define API_KEY "API_KEY"
-#define DATABASE_URL "URL"
-#define DATABASE_SECRETS_TOKEN "TOKEN"
+#define WIFI_SSID "Dining Hall - WiFi"
+#define WIFI_PASSWORD ""
+#define API_KEY "AIzaSyBtvj6QkvbdP0BrQKT80D1CssG22YMvQMY"
+#define DATABASE_URL "https://junior-817bf-default-rtdb.asia-southeast1.firebasedatabase.app"
+#define DATABASE_SECRETS_TOKEN "KOyORgwjYfxNwdzMeecBcYBentV5KaE6PZK2T3w1"
 #define TRIGGER_PIN  12
 #define ECHO_PIN     11
 #define MAX_DISTANCE 200
@@ -18,7 +18,7 @@ FirebaseAuth auth;
 FirebaseConfig config;
 
 unsigned long previous_millis = 0;
-unsigned long update_interval = 60*60*1000;
+unsigned long update_interval = 5;
 
 NewPing distance_sensor(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
 
@@ -61,6 +61,6 @@ void loop()
   {
     int distance = distance_sensor.ping_cm()
     previous_millis = millis();
-    Serial.printf("Set state... %s\n", Firebase.RTDB.setInt(&fbdo, F("/103/state"), distance) ? "ok" : fbdo.errorReason().c_str());
+    Serial.printf("Set state... %s\n", Firebase.RTDB.setInt(&fbdo, F("/1/state"), distance) ? "ok" : fbdo.errorReason().c_str());
   }
 }
