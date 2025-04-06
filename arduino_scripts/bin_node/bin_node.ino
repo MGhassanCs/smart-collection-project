@@ -4,7 +4,7 @@
 #include <addons/RTDBHelper.h>
 #include <NewPing.h>
 
-#define WIFI_SSID "Dining Hall - WiFi"
+#define WIFI_SSID "Men Dorm"
 #define WIFI_PASSWORD ""
 #define API_KEY "AIzaSyBtvj6QkvbdP0BrQKT80D1CssG22YMvQMY"
 #define DATABASE_URL "https://junior-817bf-default-rtdb.asia-southeast1.firebasedatabase.app"
